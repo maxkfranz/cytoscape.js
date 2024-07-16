@@ -47,7 +47,7 @@ if [ "$current_branch" = "unstable" ] || [ "$current_branch" = "master" ]; then
       echo "Checking $file"
 
       # Check if the file exists in the local FS
-      if [ -e "path/to/your/file" ]; then
+      if [ -e "$file" ]; then
           echo "The file $file exists in the locally-built files."
       else
           echo "The file $file does not exist in the locally-built files."
